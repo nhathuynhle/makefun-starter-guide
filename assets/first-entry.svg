@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="260" viewBox="0 0 1200 260" role="img" aria-labelledby="title desc">
+  <title id="title">Your first entry: a builder's field guide</title>
+  <desc id="desc">Three steps on a cream background: choose a task, build with evidence, review your entry.</desc>
+  <rect width="1200" height="260" rx="20" fill="#f7f2e8"/>
+  <path d="M36 38H1164" stroke="#d8d1c3"/>
+  <text x="40" y="73" fill="#324b3e" font-family="Arial, sans-serif" font-size="14" letter-spacing="3">MAKE SOMETHING YOU CAN EXPLAIN</text>
+  <text x="40" y="124" fill="#202c29" font-family="Georgia, serif" font-size="38">Small scope. Clear evidence. Your call.</text>
+  <g font-family="Arial, sans-serif">
+    <circle cx="60" cy="194" r="22" fill="#df705b"/><text x="60" y="200" text-anchor="middle" fill="#202c29" font-size="16">01</text>
+    <text x="96" y="200" fill="#202c29" font-size="21">Choose a task</text>
+    <path d="M300 194H358" stroke="#b7b5a8" stroke-width="2"/>
+    <circle cx="408" cy="194" r="22" fill="#dbe4d5"/><text x="408" y="200" text-anchor="middle" fill="#202c29" font-size="16">02</text>
+    <text x="444" y="200" fill="#202c29" font-size="21">Build with evidence</text>
+    <path d="M685 194H743" stroke="#b7b5a8" stroke-width="2"/>
+    <circle cx="793" cy="194" r="22" fill="#324b3e"/><text x="793" y="200" text-anchor="middle" fill="#ffffff" font-size="16">03</text>
+    <text x="829" y="200" fill="#202c29" font-size="21">Review your entry</text>
+  </g>
+</svg>
