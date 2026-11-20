@@ -1,29 +1,35 @@
-# Optional share drafts
+# Optional sharing drafts
 
-These are ready-to-copy drafts, **not records of posts or outreach**. Edit them for the community and share only where a guide and a disclosed referral are welcome.
+Drafts only: these new versions have not been posted by this build session. Share manually only where people have opted into this topic and referrals are allowed. The X drafts below each include one URL; counts use X's 23-character URL weighting, not raw URL length.
 
-## Vietnamese community post
+## Vietnamese X draft
 
-Mình viết một hướng dẫn EN/VI cho người lần đầu làm bài trên make.fun: chọn bounty vừa sức, ghép agent với tài khoản, giữ log thật, kiểm tra commit và phân biệt “qua check” với “có giải”. Có cả lệnh PowerShell và prompt giới hạn thời gian/chi phí.
+```text
+Làm bài make.fun đầu tiên: chọn việc nhỏ, cùng AI xây, kiểm tra đúng commit. Guide EN/VI: https://github.com/nhathuynhle/makefun-starter-guide
+Có link giới thiệu của mình; đăng ký không bảo đảm có tiền.
+```
 
-Đọc ở đây: https://github.com/nhathuynhle/makefun-starter-guide
+## English X draft
 
-Disclosure: hướng dẫn có link giới thiệu https://make.fun/r/hhxss5g8 của mình. Hoạt động đủ điều kiện có thể mang lại thưởng giới thiệu cho mình; signup người thật được xác minh có thể tính vào cuộc thi của hướng dẫn. Không có cam kết tiền chỉ vì đăng ký hoặc gửi bài. Bạn có thể vào trực tiếp https://make.fun/ thay vì dùng link giới thiệu.
+```text
+Your first make.fun entry: pick a small task, build with AI, review the exact commit. EN/VI guide: https://github.com/nhathuynhle/makefun-starter-guide
+Includes my referral link. Signup does not guarantee payment.
+```
 
-Nếu bạn thử đọc, mình muốn biết bước nào còn khó hiểu với người mới.
+## Community draft (Vietnamese)
 
-## English short post
+Mình nâng cấp hướng dẫn EN/VI cho người muốn thử một bounty make.fun đầu tiên: ba bước có dấu hiệu hoàn thành, prompt để tự chọn thời gian/ngân sách, lệnh PowerShell và cách kiểm tra đúng commit trước khi gửi.
 
-New to make.fun? I made an EN/VI field guide to choosing a small bounty, pairing your agent, preserving real build logs and reviewing the exact commit before submitting:
-https://github.com/nhathuynhle/makefun-starter-guide
+Đọc: https://github.com/nhathuynhle/makefun-starter-guide
 
-Disclosure: it includes my referral link, https://make.fun/r/hhxss5g8. Eligible activity may reward me, and verified human signups may count toward this guide's competition. Signup alone promises no payment. Direct option: https://make.fun/
+Disclosure: guide có link giới thiệu của mình, https://make.fun/r/hhxss5g8. Hoạt động đủ điều kiện có thể mang lại thưởng cho mình; signup người thật được xác minh có thể tính vào cuộc thi của guide. Đăng ký hoặc gửi bài không bảo đảm nhận tiền. Bạn có thể vào trực tiếp https://make.fun/.
 
-## Manual outreach checklist
+Nếu bạn đang định thử một bài, chỗ nào trong hướng dẫn vẫn khiến bạn phải đoán bước tiếp theo?
 
-- Confirm that the community welcomes this topic and permits disclosed referral links; ask moderators if unclear.
-- Share only in appropriate opted-in communities. Respect a refusal or removal; do not repeat-post or send unsolicited bulk DMs.
-- Read and adapt the draft yourself. Keep the disclosure beside the link and retain the direct option.
-- Do not automate posts, buy signups, create fake accounts or coordinate same-network signups to inflate counts.
-- Answer questions honestly; offer the guide without pressuring anyone to register or spend.
-- Check that the published repository and links work before sharing. No draft here implies that publication or sharing has happened.
+## Before sharing manually
+
+- Confirm the community welcomes this subject and permits referral disclosure. Ask moderators when unclear.
+- Keep the disclosure with the guide link. Do not promise signup rewards or winnings.
+- No auto posts, repeated unsolicited DMs or bulk outreach. Respect a refusal or removal.
+- Do not buy, invent or coordinate fake/same-network signups; invite voluntary participation only.
+- Check the public guide link and current bounty status before posting. These drafts do not claim anything was posted.

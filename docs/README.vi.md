@@ -1,53 +1,72 @@
-# Bài dự thi make.fun đầu tiên của bạn
+# Bài make.fun đầu tiên của bạn
 
-**Bạn chọn việc, AI cùng làm, bạn xem lại trước khi gửi.**
+**Chọn một việc nhỏ. Cùng AI làm cho xong. Xem lại rồi mới gửi.**  
+[← English guide](../README.md)
 
-[← English guide](../README.md) · [Bắt đầu với link giới thiệu](https://make.fun/r/hhxss5g8) · [Vào trực tiếp](https://make.fun/)
+make.fun có các **bounty**: cuộc thi với đề bài, hạn chót và giải thưởng được công bố. Bạn chọn việc, cùng AI coding agent xây sản phẩm, rồi nộp sản phẩm kèm bản ghi phiên làm việc để chứng minh quá trình tạo ra nó. Có nhận giải hay không phụ thuộc luật và thứ hạng cuối.
 
-> Link giới thiệu dùng mã `hhxss5g8` của mình. Hoạt động đủ điều kiện có thể mang lại thưởng giới thiệu cho mình; người mới được xác minh có thể được tính vào bài dự thi của hướng dẫn này. Bạn không được hứa trả tiền chỉ vì đăng ký. Link trực tiếp ở trên là lựa chọn khác.
+![Chọn một bài, cùng AI xây sản phẩm, rồi gửi công việc của bạn.](../assets/first-entry.svg)
 
-make.fun tổ chức các cuộc thi có đề bài, thời hạn, cách chấm và giải thưởng riêng. Bạn cùng AI agent xây bài, gửi sản phẩm và bằng chứng phiên làm việc. Qua kiểm tra không đồng nghĩa với thắng giải. Mục tiêu đầu tiên nên là một bài nhỏ, hoàn chỉnh và bạn hiểu được.
+### [Tìm bài đầu tiên trên make.fun →](https://make.fun/r/hhxss5g8)
 
-## 01 / Chọn bài vừa sức
+Đây là link giới thiệu của mình, mã `hhxss5g8`: hoạt động đủ điều kiện có thể mang lại thưởng cho mình; signup người thật được xác minh có thể tính vào cuộc thi của hướng dẫn này. **Đăng ký không có nghĩa bạn được trả tiền.** [Vào make.fun không qua link giới thiệu](https://make.fun/).
 
-Đọc **Rules, Rewards, Phases** trên trang cuộc thi. Với bài code đầu tiên, chọn bài có đầu vào/đầu ra rõ, ví dụ dễ tự kiểm tra, ngôn ngữ bạn chạy được và đủ thời gian sửa ít nhất một lượt.
+**Chọn cách bắt đầu:** [Tôi đã có AI coding agent](#agent) · [Tôi muốn dùng terminal](#terminal)  
+[Ba bước nhanh](#quickstart) · [Ví dụ thật](#example) · [Gỡ vướng](#help) · [Từ điển nhỏ](#glossary)
 
-Ghi lại: **nộp gì · thắng bằng cách nào · hạn chót · chi phí**. Xem runtime, giấy phép, quyền sở hữu repo, log cần nộp và giới hạn số lần gửi. Tổng quỹ thưởng không phải số tiền mỗi người nhận; bạn có thể không nhận giải.
+<a id="quickstart"></a>
 
-Bạn cần GitHub, agent có lưu log phiên thật và Node.js 22 để chạy CLI trong kit. Bài yêu cầu repo công khai phải nằm dưới đúng tài khoản GitHub được liên kết. Ví Solana dùng để nhận USDC; quá trình ghép agent có thể tạo ví cục bộ.
+## Ba bước, mỗi bước một kết quả
 
-**Tính cả chi phí:** nhiều bounty không thu phí vào bài nhưng một số có thu; đọc trang bài cụ thể. Model/API hoặc gói thuê bao agent vẫn có thể tốn tiền. Khi claim giải on-chain, ví còn có thể cần SOL cho phí mạng và rent tạo tài khoản lần đầu. Đừng mặc định mọi thứ miễn phí.
+| Bước | Làm gì | Khi nào chuyển bước? |
+|---|---|---|
+| **01 · Chọn bài** | Chọn bounty còn nhận bài; kiểm tra hạn nộp trong Phases, rồi đọc Rules và Rewards. Chọn bài nhỏ có ví dụ rõ và môi trường bạn chạy được. | Bạn nói được nộp gì, thắng bằng cách nào, hạn chót và chi phí. |
+| **02 · Cùng AI xây** | Tải **kit**—gói luật, file mẫu và công cụ của bài. Mở phiên được ghi log sau giờ mở cuộc thi, làm bản đầu, kiểm tra rồi sửa. | Có sản phẩm chạy được, kết quả kiểm tra có ý nghĩa và bản ghi gốc. |
+| **03 · Xem lại rồi nộp** | Kiểm tra repo công khai, đúng **commit**—phiên bản file đã lưu bằng Git—và bằng chứng. Chạy check rồi dùng form nộp bài. | Có receipt xác nhận đúng phiên bản bạn định gửi. |
 
-## 02 / Liên kết đúng tài khoản của bạn
+**Trước khi chi tiền:** tự chọn thời gian và ngân sách model/API phù hợp. Model hoặc gói thuê bao agent có thể tốn tiền; một số bounty thu phí vào bài. Claim giải on-chain có thể cần SOL cho phí và rent tạo tài khoản lần đầu. Đọc bài cụ thể trước khi trả phí.
 
-1. Đăng nhập make.fun; nếu chưa liên kết GitHub, vào **Profile → Identity → Link GitHub**. Hoàn tất xác nhận ví nếu có, rồi cấp quyền GitHub; kiểm tra tên GitHub đã xuất hiện trong hồ sơ.
-2. So sánh GitHub đã liên kết với chủ sở hữu repo định gửi. File tự khai quyền sở hữu không thay thế được liên kết này cho cuộc thi hướng dẫn.
-3. Tải kit ở bước sau, rồi đứng trong thư mục kit và chạy:
+<a id="agent"></a>
 
-```sh
-node cli/makefun.mjs login --origin https://make.fun
+## Đã có AI coding agent? Bắt đầu ở đây
+
+Dùng client lưu **transcript** thật: bản ghi các tin nhắn, lần gọi công cụ và kết quả của phiên xây bài. Giữ nguyên bản gốc. Chọn một bounty cụ thể còn mở, thay hai trường trong ngoặc vuông rồi gửi prompt trong phiên mới:
+
+```text
+Giúp tôi làm bài [TÊN BOUNTY ĐANG MỞ VÀ SLUG] trên make.fun.
+Làm trong [ĐƯỜNG DẪN TUYỆT ĐỐI ĐẾN REPO BÀI CỦA TÔI].
+Đọc luật, requirements, kit hiện tại của bài và make.fun/skill.md.
+Xác nhận bài còn mở; giải thích sản phẩm cần nộp, cách chấm, điều kiện,
+hạn chót, phí và bằng chứng trước khi viết file.
+Hỏi tôi chọn giới hạn thời gian và ngân sách model/API. Nói rõ khoản chi
+nào bạn đo được; không hứa mức trần bạn không thực thi được. Hỏi trước
+hành động trả phí và dừng tại mốc xem lại đã thống nhất.
+Ghép agent với tài khoản hiện có của tôi qua bước người dùng phê duyệt;
+để tôi xem mã và quyền. Không tạo tài khoản riêng thay tôi hoặc in credential.
+Xác nhận handle đã kết nối là của tôi.
+Làm bản nhỏ nhưng hoàn chỉnh, kiểm tra có ý nghĩa, tự phê bình rồi sửa
+bằng một lượt edit riêng. Giữ bản ghi harness và setup thật.
+Không bịa log, usage, test, ảnh chụp hay người dùng.
+Dừng với commit chính xác, kết quả check và vấn đề còn lại để tôi xem.
+Chờ tôi đồng ý trước khi publish hoặc submit.
 ```
 
-Bạn tự mở URL phê duyệt khi đã đăng nhập, đối chiếu mã và xem quyền trước khi duyệt. CLI phải báo đúng handle của bạn. Nếu vẫn chờ, chạy lại cùng lệnh để tiếp tục. Nếu mã hết hạn, chạy lại `login` rồi mở link mới vừa được in ra, không dùng trang hết hạn. Nếu hiện tài khoản người khác, dừng và xử lý trước khi gửi bài. Không chia sẻ credential để ghép agent.
+Ở lượt xem đầu, hỏi: **“Cho tôi xem một ca thường, một ca biên và điều gì vẫn có thể lỗi.”** Với code, chỉ chạy local grade nếu kit có hướng dẫn; điểm practice không phải điểm cuối. Với bài hướng dẫn, xem liên kết, từng bước và cách GitHub thực sự hiển thị.
 
-Ghép agent giúp nó gửi bài dưới tài khoản của bạn. Chỉ bật quyền chi tiền khi bạn chủ động muốn dùng; không cần bật betting hay tài trợ để học làm bài đầu tiên.
+<a id="terminal"></a>
 
-Không đưa seed phrase, API key hay file private keypair vào repo hoặc chat. Không in credential ra terminal vì có thể lọt vào log. Giữ file ví agent bên ngoài repo và sao lưu an toàn như một khóa ví thật.
+## Muốn dùng terminal? Đi theo đường này
 
-## 03 / Tải kit, đọc luật trước khi viết
+### 1. Lấy đúng kit
 
-Mỗi bài có kit riêng. Ví dụ dưới đây tải **Bring the humans again**, không phải kit chung cho mọi cuộc thi. Với bài khác, lấy URL kit từ trang bài đó.
+Chạy `node --version` và `tar --version` trước. Kit dùng Node.js 22. Nếu thiếu, cài Node.js 22 rồi mở lại terminal. Nếu thiếu `tar`, dùng công cụ hỗ trợ `.tar.gz` để giải cả hai lớp.
 
-Kiểm tra công cụ trước:
+Ví dụ dưới tải **Bring the humans again**, cuộc thi của hướng dẫn này. **Nếu chọn bài khác, lấy URL kit riêng trên trang bài đó.** Tải lỗi thì dừng.
 
-```sh
-node --version
-tar --version
-```
+<details>
+<summary><strong>Windows PowerShell</strong></summary>
 
-Dùng Node.js 22 cho kit. Nếu thiếu Node hoặc phiên bản không phù hợp, cài Node.js 22 rồi mở lại terminal. Nếu thiếu `tar`, cài công cụ hỗ trợ `.tar.gz` hoặc dùng trình giải nén hệ thống để giải cả hai lớp. Nếu tải lỗi thì dừng, không giải nén trang báo lỗi.
-
-**Windows PowerShell:** dùng `curl.exe` để tránh alias `curl` có cách nhận tham số khác.
+Dùng `curl.exe` để tránh alias `curl` của PowerShell nhận tham số khác.
 
 ```powershell
 curl.exe -fL -o bring-the-humans-02-kit.tar.gz https://make.fun/c/bring-the-humans-02/kit
@@ -56,7 +75,10 @@ Set-Location bring-the-humans-02-kit
 node cli/makefun.mjs help
 ```
 
-**macOS / Linux:**
+</details>
+
+<details>
+<summary><strong>macOS / Linux</strong></summary>
 
 ```sh
 curl -fL -o bring-the-humans-02-kit.tar.gz https://make.fun/c/bring-the-humans-02/kit
@@ -65,93 +87,110 @@ cd bring-the-humans-02-kit
 node cli/makefun.mjs help
 ```
 
-Đọc `RULES.txt`, `competition.yaml` và starter. Đặt thư mục repo bài dự thi cạnh thư mục kit. Starter chỉ là khung; cần tạo bài của mình trong phiên được ghi lại.
+</details>
 
-## 04 / Giao việc có giới hạn
+Đọc `RULES.txt` và `competition.yaml`. Đặt repo bài bên cạnh kit. File mẫu là khung để phát triển, không phải bài hoàn chỉnh của bạn.
 
-Tạo repo và mở **phiên agent mới sau giờ mở cuộc thi**. Thêm giấy phép được OSI chấp thuận, chẳng hạn MIT. Giữ nguyên log gốc của harness, cả lần lỗi và kết quả công cụ.
+### 2. Kết nối đúng tài khoản rồi xây bài
 
-Thay hai trường trong ngoặc vuông trước khi dùng prompt sau:
+Đăng nhập make.fun. Nếu chưa có GitHub trong hồ sơ, vào **Profile → Identity → Link GitHub**, xác nhận ví nếu được yêu cầu, rồi cấp quyền GitHub. Kiểm tra tên GitHub hiện ra và khớp chủ repo khi bài yêu cầu.
 
-```text
-Giúp tôi làm bài make.fun cho [TÊN BÀI VÀ SLUG].
-Làm trong [ĐƯỜNG DẪN TUYỆT ĐỐI ĐẾN REPO BÀI CỦA TÔI].
-Đọc luật, requirements, kit và https://make.fun/skill.md.
-Nêu rõ sản phẩm cần nộp, cách chấm, hạn chót, phí và bằng chứng cần có.
-Giới hạn 45 phút và 5 USD chi phí model/API phát sinh; dừng nếu không
-đo hoặc thực thi được giới hạn chi phí. Hỏi trước mọi hành động trả phí.
-Làm bản nhỏ nhất nhưng hoàn chỉnh, kiểm tra có ý nghĩa, tự phê bình,
-rồi sửa bằng một lượt edit riêng. Giữ log phiên thật.
-Không bịa test, log, ảnh chụp, người dùng hay số liệu usage.
-Không lộ credential. Dừng với repo có thể xem lại, commit chính xác,
-kết quả kiểm tra và rủi ro còn lại; chờ tôi trước khi publish hoặc submit.
+Đứng trong thư mục kit:
+
+```sh
+node cli/makefun.mjs login --origin https://make.fun
 ```
 
-Với code, kiểm tra ca thường, ca biên và dữ liệu sai nếu đặc tả quy định cách xử lý. Sửa lỗi quan sát được rồi chạy lại kiểm tra liên quan. Chỉ chạy local grade khi kit bài đó có hướng dẫn; điểm practice không bảo đảm điểm cuối.
+Tự mở link vừa in ra, đối chiếu mã và xem quyền trước khi duyệt. CLI phải báo đúng handle của bạn. Mở phiên xây bài mới sau giờ mở cuộc thi, thêm giấy phép được OSI chấp thuận và giữ log gốc xuyên suốt quá trình kiểm tra, sửa bài.
 
-Với hướng dẫn, kiểm tra đường dẫn, từng bước thao tác và cách hiển thị trên GitHub. Hỏi: “Người chưa dùng nền tảng có biết phải làm gì tiếp theo không?”
+### 3. Kiểm tra phiên bản đã lưu trước khi gửi
 
-## 05 / Xem đúng commit và bằng chứng trước khi gửi
+Commit đủ file trước: `check` mặc định đọc **HEAD đã commit**, không đọc sửa đổi chưa commit. Lệnh `git rev-parse HEAD` in SHA đủ 40 ký tự. Push đúng phiên bản đó trước khi gửi.
 
-- [ ] Repo công khai, đúng chủ sở hữu GitHub đã liên kết và đúng thời gian được phép tạo.
-- [ ] Đủ file, license, badge động và About website/topic theo yêu cầu bài.
-- [ ] `README.md` ở gốc hiển thị đúng; không có `.github/README.md` ghi đè.
-- [ ] Đã commit và push đủ file; lấy SHA đủ 40 ký tự bằng `git rev-parse HEAD`.
-- [ ] Bundle gồm mọi phiên xây bài và run record thật: prompt mở đầu, harness/phiên bản, provider/model/effort, system setup, instruction files và MCP đã dùng.
-- [ ] Check đúng commit và bundle; xử lý mọi lỗi từ chối và ghi chú cần sửa.
-- [ ] Hiểu phí, yêu cầu ký/ví, deadline, giới hạn nộp và bài nào được tính cuối.
-
-Đứng trong kit để chạy. `../my-entry` là **đường dẫn ví dụ**, thay bằng repo của bạn. Bundle là bằng chứng riêng tư, không đưa vào public repo.
+Đứng trong kit và **thay `../my-entry` bằng đường dẫn repo thật của bạn**:
 
 ```sh
 node cli/makefun.mjs bundle --repo ../my-entry --out transcripts.tar.gz
 node cli/makefun.mjs check --kit . --repo ../my-entry --transcripts transcripts.tar.gz
 ```
 
-`check` mặc định đọc **HEAD đã commit**, không đọc các sửa đổi chưa commit. Commit đủ file định gửi trước khi check và push đúng commit đó trước khi nộp. Qua check không phải có điểm referral cục bộ.
+Bundle là bằng chứng riêng tư, không đưa vào repo công khai. Nếu thiếu metadata, bổ sung thông tin thật mà lệnh yêu cầu. Trước khi mở form, đối chiếu bốn điều:
 
-Nếu bundle thiếu metadata, bổ sung thông tin thật mà nó yêu cầu. Không đoán model, effort hay system prompt để vượt kiểm tra. Bản tóm tắt tự viết không thay được log được ghi bởi harness.
+- [ ] Repo công khai thuộc đúng GitHub đã liên kết theo yêu cầu, đủ license, badge và file bắt buộc.
+- [ ] README trên default branch hiển thị đúng; không có `.github/README.md` ghi đè. About có website/topic mà bài yêu cầu.
+- [ ] Đã push đúng commit; check commit đó cùng bundle thật không còn lỗi từ chối hay ghi chú cần xử lý.
+- [ ] Bạn hiểu hạn chót, quota còn dùng, phí và yêu cầu ký nếu có.
 
-**Che thông tin đúng cách:** kit tự loại các credential và thông tin cá nhân thường gặp. Dùng tùy chọn redaction được tài liệu cho phép cho chi tiết cá nhân không liên quan trong bản sao bundle; giữ log gốc. Instruction files và system prompt được che theo phạm vi luật cho phép. Không bịa hoặc sửa log xây bài, xóa lỗi để đổi ý nghĩa, hay che code, lệnh, tool output hoặc reasoning cần để đối chiếu công việc.
+Sau đó gửi URL, commit chính xác và bằng chứng qua form; giữ receipt. Với bài guide như repo này, ảnh bắt buộc phải chụp trang GitHub đã publish thật, không thay bằng mockup.
 
-Gửi URL repo, commit chính xác và bằng chứng qua form trên trang bài. Một lần push sau đó không tự cập nhật snapshot đã gửi. Nếu sửa, cần nộp lại theo luật trước hạn và giữ receipt.
+**Push không đổi snapshot đã nộp.** Đọc luật bài nếu cần gửi commit mới. Với cuộc thi referral này, lần gửi cuối được nhận trước hạn là bài được tính; đồng điểm thì receipt bài cuối sớm hơn đứng trước. Nâng cấp guide đang hiển thị không thay đổi bài đã chốt theo commit cũ.
 
-## 06 / Phân biệt check, điểm và tiền về ví
+[Checklist repo, log và claim chi tiết bằng tiếng Anh →](HANDBOOK.md#review)
 
-| Trạng thái | Ý nghĩa |
+<a id="example"></a>
+
+## Một bài thật để bạn mở ra xem
+
+Repo này là một hướng dẫn đã nộp. Ở [commit nộp ban đầu `35ccff6`](https://github.com/nhathuynhle/makefun-starter-guide/commit/35ccff62cd200d73e74082691b949babc5ebbba2), bạn có thể xem README gốc, SVG nguyên bản, MIT license, bản tiếng Việt và ảnh chụp GitHub thật.
+
+Theo kiểm tra của tác giả ngày **20/11/2026**, server báo bài đã scored, **29 check được trả về, không lỗi**, và **99,5% authorship** ở commit ban đầu. Đây là thông tin về kiểm tra đầu vào và nguồn gốc công việc, **không chứng minh có giải hoặc có signup thành công**, cũng không dự báo kết quả của bạn. Guide đang đọc có thể được cải thiện trong khi snapshot đã nộp vẫn giữ nguyên.
+
+Thử xem ba điều: hướng dẫn bắt đầu từ đâu, license được đặt thế nào và các file liên kết có thật không. Khi làm bài riêng, vẫn theo yêu cầu bounty của bạn.
+
+<a id="help"></a>
+
+## Gỡ vướng bằng bước tiếp theo cụ thể
+
+| Bạn gặp gì? | Làm tiếp thế nào? |
 |---|---|
-| Checked | Đã kiểm tra điều kiện, file và log. Chưa phải thắng giải. |
-| Scored | Đã có kết quả theo cách chấm của bài; xem đó là practice, tạm thời hay cuối cùng. |
-| Paid | Giải đủ điều kiện đã được claim và chuyển. Kiểm tra địa chỉ nhận và receipt. |
+| Chưa liên kết GitHub / repo “không thuộc bạn” | Vào Profile → Identity → Link GitHub, xác nhận ví nếu có rồi cấp quyền. So tên GitHub trong hồ sơ với owner của repo. |
+| Ghép agent vẫn chờ | Chạy lại cùng lệnh `login`. Nếu mã hết hạn, mở link mới vừa in ra và đối chiếu mã mới. Không chia sẻ credential. |
+| Agent kết nối nhầm handle | Dừng trước khi gửi bài, xử lý đúng danh tính tài khoản của bạn. |
+| Bundle không ghi file | Đọc trường còn thiếu; dùng dữ liệu harness/setup và mọi phiên thật, không thay bằng bản tóm tắt. |
+| Check hoặc bài gửi chưa có phần sửa | Xem `git status`, commit phần định gửi và so HEAD với SHA đã nộp. Push riêng không cập nhật bài. |
+| Không có local grade | Đọc phần chấm trong kit. Guide referral này không có scorer cục bộ; check là kiểm tra điều kiện. |
+| Qua check mà chưa có tiền | Checked là kiểm tra điều kiện; scored là đã chấm theo cơ chế bài; paid là giải đủ điều kiện đã claim và chuyển. |
 
-Xem trạng thái trên web hoặc chạy `node cli/makefun.mjs status` trong kit. Nếu có giải, làm theo màn hình claim chính thức và tự trả lời trung thực các câu hỏi điều kiện. USDC được nhận trên Solana; xem kỹ phí hoặc khoản khấu trừ được đề nghị trước khi ký. Thứ hạng hiển thị chưa có nghĩa tiền đã về ví.
+<details>
+<summary><strong>Giữ bằng chứng mà không lộ credential</strong></summary>
 
-## Riêng cuộc thi của repo này
+Để key, seed ví và file private keypair ngoài repo; không in chúng ra terminal. Giữ log gốc đầy đủ, cả lần lỗi. Bundle thu thập phiên xây bài và run record gồm prompt thật ban đầu, harness/phiên bản, provider/model/effort, setup, instruction files và MCP đã dùng.
 
-[Bring the humans again](https://make.fun/bounty/bring-the-humans-02) dùng **referral/v1**: nộp README hướng dẫn trên GitHub kèm ảnh thật của trang repo đã publish. **Không có runtime/scorer cục bộ**; số người thật đăng ký và được hệ thống xác minh mới quyết định điểm, không phải độ hay của văn bản.
+Dùng tùy chọn redaction được tài liệu cho phép cho chi tiết cá nhân không liên quan trong bản sao. System prompt và instruction files được che trong phạm vi luật cho phép. Không bịa/sửa log, lùi timestamp, xóa lỗi để thay ý nghĩa hoặc che code, lệnh, tool output hay reasoning cần đối chiếu. [Chi tiết bằng chứng](HANDBOOK.md#review).
 
-Hạn chót: **21/11/2026 lúc 10:30 UTC, tức 17:30 giờ Việt Nam**. Quỹ 1.000 USD chia cho top 50 theo luật, không bảo đảm ai đăng ký hay gửi bài đều có tiền. Lượt truy cập, signup đang chờ và số tạm tính khác với signup được xác minh. Tài khoản của chính mình, cùng người/cùng mạng, bot hoặc tài khoản không tham gia không đủ điều kiện. Không tạo hoạt động giả.
+</details>
 
-Sau khi publish, chụp **trang repo GitHub thật với README hiển thị** thành `screenshot.png` ở gốc. Phần đầu nên thấy tên repo và mở đầu hướng dẫn; ảnh tối đa 8 MB và 16 triệu pixel. Không dùng ảnh mockup.
+<details>
+<summary><strong>Cuộc thi referral của guide: ngày, giới hạn và xác minh</strong></summary>
 
-Bài cuối là lần gửi gần nhất được nhận trước hạn. Mức công bố là trần 5 lần/ngày UTC và 10 lần tổng cộng; quota còn dùng của tài khoản có thể thấp hơn, nên xem status trước khi gửi lại.
+[Bring the humans again](https://make.fun/bounty/bring-the-humans-02) dùng **referral/v1**: guide GitHub công khai kèm ảnh chụp thật, điểm dựa trên **signup người thật được xác minh**, không dựa độ hay của văn bản. Không có scorer cục bộ. Quỹ 1.000 USD chia cho top 50 theo luật; không bảo đảm có tiền.
 
-Mỗi signup có thời gian giữ để xét duyệt **24 giờ từ lúc gắn mã**. Đợt kiểm tra cuối bắt đầu khi đóng bài và chỉ tính signup được xác minh trước khi đợt này kết thúc, **30 giờ sau hạn chót**. Signup chưa có quyết định không được tính; hết 24 giờ không bảo đảm được duyệt. Repo vẫn phải công khai, cùng chủ sở hữu và còn mã giới thiệu trong README trên default branch để qua kiểm tra repo cuối.
+Hạn chót **21/11/2026, 10:30 UTC / 17:30 Việt Nam**. Lần gửi cuối được nhận trước hạn là bài được tính. Trần công bố **5 lần/ngày UTC / 10 lần tổng cộng**; quota tài khoản có thể thấp hơn. Xem `node cli/makefun.mjs status` trước khi nộp lại. Đồng số signup đã xác minh thì receipt bài cuối sớm hơn đứng trước.
 
-## Gỡ vướng thường gặp
+Mỗi signup có thời gian giữ xét duyệt **24 giờ từ lúc gắn mã**. Kiểm tra cuối chỉ tính signup được xác minh trước khi đợt này kết thúc, **30 giờ sau hạn chót**; chưa quyết định thì không tính. Tài khoản của chính mình, cùng người/cùng mạng, bot và tài khoản không tham gia không đủ điều kiện. Không tạo hoặc phối hợp hoạt động giả.
 
-| Vướng | Kiểm tra tiếp |
+Repo phải tiếp tục công khai, cùng chủ sở hữu và còn mã giới thiệu trong README trên default branch khi kiểm tra lại cuối. Ảnh phải chụp trang GitHub đã publish thật, không phải mockup. Sửa guide đang hiển thị không thay đổi commit đã nộp.
+
+</details>
+
+<details>
+<summary><strong>Nếu bài có giải</strong></summary>
+
+Làm theo màn hình claim chính thức, tự trả lời trung thực câu hỏi điều kiện và kiểm tra địa chỉ nhận trước khi ký. Giải là USDC trên Solana; có thể cần phí mạng và rent lần đầu. Xem khoản khấu trừ nếu có đề nghị. Kiểm tra cuối và thời gian challenge nếu áp dụng diễn ra trước khi được claim. [Chi tiết](HANDBOOK.md#result).
+
+</details>
+
+<a id="glossary"></a>
+
+## Bốn từ hay gặp
+
+| Từ | Hiểu đơn giản |
 |---|---|
-| Repo “không thuộc bạn” | So sánh GitHub đã liên kết và owner trong URL. |
-| Chưa liên kết GitHub | Vào Profile → Identity → Link GitHub, xác nhận ví nếu có rồi cấp quyền; kiểm tra tên GitHub xuất hiện. |
-| Mã ghép agent hết hạn | Chạy lại `login`, mở link mới được in ra và đối chiếu mã mới trước khi duyệt. |
-| Markdown trên GitHub khác máy | Kiểm tra chữ hoa/thường, đường dẫn và README ghi đè. |
-| Bundle không ghi file | Đọc trường metadata còn thiếu và dùng log thật. |
-| Transcript gate lỗi | Đọc tên check; làm việc mới trong phiên hợp lệ, không sửa timestamp. |
-| Qua ví dụ nhưng điểm thấp | Đọc lại ràng buộc và ca biên; ví dụ không phải toàn bộ test cuối. |
-| Referral có lượt xem mà không có điểm | Chờ xác minh người thật; không tự tạo tài khoản để tăng số. |
-| Bài đã gửi chưa có phần sửa | Đối chiếu commit, rồi nộp lại trong giới hạn nếu còn thời gian. |
+| Bounty | Cuộc thi có đề bài, luật, hạn chót và giải thưởng. |
+| Kit | Gói tải về gồm luật, file mẫu và CLI của bài đó. |
+| Commit | Phiên bản Git đã lưu có SHA riêng; bài gửi trỏ đến đúng một phiên bản. |
+| Transcript | Bản ghi phiên agent thật để đối chiếu quá trình tạo sản phẩm. |
 
-Đối chiếu ngày **19/11/2026** với kit chính thức và `skill.md` được cung cấp; lệnh CLI đã so với help đi kèm. Luôn đọc lại luật bài bạn chọn trước khi thao tác.
+Đối chiếu nguồn cục bộ chính thức ngày **20/11/2026**: luật, requirements mới nhất và hướng dẫn agent. [Cách hoạt động](https://make.fun/how-it-works) · [Hướng dẫn agent](https://make.fun/skill.md) · [Luật bài này](https://make.fun/bounty/bring-the-humans-02) · [Kit chính thức](https://make.fun/c/bring-the-humans-02/kit).
 
-[Cách hoạt động](https://make.fun/how-it-works) · [Hướng dẫn agent chính thức](https://make.fun/skill.md) · [Kit chính thức](https://make.fun/c/bring-the-humans-02/kit) · [Mẫu chia sẻ có disclosure](SHARE.md)
+[English](../README.md) · [Handbook chi tiết (EN)](HANDBOOK.md) · [Mẫu chia sẻ tùy chọn](SHARE.md) · [MIT license](../LICENSE)
